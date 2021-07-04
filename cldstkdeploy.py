@@ -19,33 +19,22 @@ from optparse import OptionParser
 
 
 # Supported versions on apache cloudstack
-__versionsupport__ = ['4.3', '4.4', '4.5']
+__versionsupport__ = ['4.16']
 __version__ = "1.2.0"
 __description__ = "CloudStack Deploy is a utility for making Apache CloudStack " \
                   "and KVM installations quick, easy and painless."
-__maintainer__ = "Antone Heyward"
-__maintaineremail__ = "thehyperadvisor@gmail.com"
+__maintainer__ = "zzzzzz"
+__maintaineremail__ = "zzzzzzz"
 __project__ = "cldstk-deploy"
-__projecturl__ = "https://github.com/thehyperadvisor/cldstk-deploy"
+__projecturl__ = "https://github.com/hashplatform/cldstk-deploy"
 __repolocalpath__ = '/public/rpms/rhel/'
 __systmpllocalpath__ = '/public/templates/'
 
 configs = {
-    'local': {
-        '4.5': {'download': 'https://dl.dropboxusercontent.com/u/3904598/cloudstack-4.5.1-rpms.tar.gz', 'rpms': '',
-                'systmplfile': 'systemvm64template-4.5-kvm.qcow2.bz2'},
-        '4.4': {'download': 'https://dl.dropboxusercontent.com/u/3904598/cloudstack-4.4.2-rpms.tar.gz', 'rpms': '',
-                'systmplfile': 'systemvm64template-4.4.0-6-kvm.qcow2.bz2'},
-        '4.3': {'download': 'https://www.dropbox.com/sh/7fa1j6ymap1wrgu/BXfoDzUNWy/cloudstack-4.3.0-rpms.tar.gz',
-                'rpms': '', 'systmplfile': 'systemvm64template-2014-01-14-master-kvm.qcow2.bz2'}
-    },
     'internet': {
-        '4.5': {'download': '', 'rpms': '',
-                'systmplurl': 'http://packages.shapeblue.com/systemvmtemplate/4.5/systemvm64template-4.5-kvm.qcow2.bz2'},
-        '4.4': {'download': '', 'rpms': '',
-                'systmplurl': 'http://cloudstack.apt-get.eu/systemvm/4.4/systemvm64template-4.4.0-6-kvm.qcow2.bz2'},
-        '4.3': {'download': '', 'rpms': '',
-                'systmplurl': 'http://download.cloud.com/templates/4.3/systemvm64template-2014-01-14-master-kvm.qcow2.bz2'}
+        '4.16': {'download': '', 'rpms': '',
+                'systmplurl': 'http://packages.shapeblue.com.s3-eu-west-1.amazonaws.com/systemvmtemplate/4.16/systemvmtemplate-4.16.0-kvm.qcow2.bz2'
+                      
     }
 }
 # Set user passwords for mysql users
